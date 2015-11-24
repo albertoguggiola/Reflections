@@ -1,0 +1,7 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+The .git file, containing the meta data, is created to store the commits.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Intermediate step to better control what to put in a commitment.
