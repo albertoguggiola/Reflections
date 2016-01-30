@@ -5,3 +5,23 @@ The .git file, containing the meta data, is created to store the commits.
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 Intermediate step to better control what to put in a commitment.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+By git diff --staged you see all the changes between the staging area and the most recent commit. If they correspond to a single logical change, you can safely commit them.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+In all the situations in which you may want to test different alternative versions and, in the end, possibly merge them together. Also for peopl separately working on different parts of a bigger projects.
+
+How do the diagrams help you visualize the branch structure?
+
+More easily see the hierarchical structure of the commits. See any possible detached head states (unreachable by using the current branches), so to decide whether to assign to it a new branch or to discard it. Know which commits are included in any branch.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Unify changes made by different people and/or on different features. It is represented in this way to show that both the former branches are reachable by the merged one.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+When Git gets to automatically merge, it will be much faster. However, in some cases it could merge in a way that is not the smartest possible (e.g. two different functions having the same role will both be present.)
