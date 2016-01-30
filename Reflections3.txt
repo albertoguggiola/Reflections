@@ -1,0 +1,5 @@
+Reflections on chapter 3 
+
+When would you want to use a remote repository rather than keeping all your work local?
+When working locally on different computers, or when collaborating with other people.
+
